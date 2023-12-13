@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter form</title>
+  </head>
+  <body>
+    <main>
+      <div class="image-box">
+        <picture>
+          <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 680px)">
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt=""/>
+        </picture>
+      </div>
+      <div class="container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are success</li>
+          <li>And much more!</li>
+        </ul>
+        <form onsubmit="handleSubmit(event)">
+          <label for="email">
+            Email address
+            <span id="email-error" style="display: none;">Valid email required</span>
+          </label>
+          <input type="text" autocomplete="email" id="email" value="" placeholder="email@company.com"/>
+          <input type="submit" value="Subscribe to monthly newsletter" class="btn"/>
+        </form>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
